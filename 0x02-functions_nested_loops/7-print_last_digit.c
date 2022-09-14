@@ -4,18 +4,23 @@
  * print_last_digit - Prints out last digit of a number
  * @c: number to be tested
  *
- * Description: Accepts a number and prints out the last digit of the number 
- * Return: Always 0 (success)
+ * Description:Accepts a number and prints out the last digit of the number
+ * Return:Always 0
  */
 int print_last_digit(int c)
 {
-	int last_digit = n % 10;
+	int n;
 
-	if (last_digit < 0)
+	if (c < 0)
 	{
-		last_digit *= -1;
+		c = -c;
 	}
-	_putchar(last_digit + '0');
+	n = c % 10;
+	if (n < 0)
+	{
+		n = -n;
+	}
+	_putchar(n + '0');
 
-	return (last_digit);
+	return (0);
 }
