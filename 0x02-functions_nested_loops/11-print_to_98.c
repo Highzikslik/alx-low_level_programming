@@ -1,5 +1,4 @@
 #include "main.h"
-#include <studio.h>
 
 /**
  * print_to_98 - display numbers from given input to 98
